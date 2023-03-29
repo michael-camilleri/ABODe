@@ -1,5 +1,5 @@
-# The Activity Labelling Module (ALM)
-This repository contains the Annotated Behaviour Dataset used to train and evaluate the Activity Labelling Module in Chapter 5 of my PhD Thesis “Automated Identification and Behaviour Classification for Modelling Social Dynamics in Group-Housed Mice” [1].
+# Annotated Behaviour and Observability Dataset (ABODe)
+This repository contains the Annotated Behaviour and Observability Dataset used to train and evaluate the Activity Labelling Module for group-housed mice in Chapter 5 of my PhD Thesis “Automated Identification and Behaviour Classification for Modelling Social Dynamics in Group-Housed Mice” [1].
 
 ## 1. Repository Structure
 
