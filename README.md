@@ -4,7 +4,7 @@ The video recordings are courtesy of the Mary Lyon Centre at MRC Harwell [3].
 
 ## 1. Repository Structure
 
-***Note***: Due to size limitations, the per-snippet identities, positions and video in **Snippets** is stored as a zip-file on our University of Edinburgh [DataShare Project Page (Todo)](todo).
+***Note***: Due to size limitations, the per-snippet identities, positions and video in **Snippets** is stored as a zip-file on our University of Edinburgh [DataShare Project Page](https://datashare.ed.ac.uk/handle/10283/4837).
 ```
 ├── dataset                         # Curated Version of the DataSet
 │    ├── Datasplits.df
@@ -30,11 +30,11 @@ The video recordings are courtesy of the Mary Lyon Centre at MRC Harwell [3].
  * The data is provided for reproducibility purposes and also to allow further research on the data: for this reason, it is provided in its complete form and with minimal processing.
 
 ### 2.1 Storage Organisation
- * The dataset is stored partly within this repository (under `dataset`), with the snippets available through our [DataShare Project Page (Todo)](todo) as a zip-file: an empty *Snippets* directory is provided to indicate where it should exist relative to the root.
+ * The dataset is stored partly within this repository (under `dataset`), with the snippets available through our [DataShare Project Page](https://datashare.ed.ac.uk/handle/10283/4837) as a zip-file: an empty *Snippets* directory is provided to indicate where it should exist relative to the root.
  * We provide two global files:
     * `Datasplits.df`: Pandas dataframe of assignment of snippets to datasplits (train/validation etc...)
     * `Annotations.df`: Per-BTI annotations (pandas dataframe)
- * The snippets are organised within their own directory, with the name indicating the `[Cage-ID]_[Segment-ID]_[Snippet-ID]`
+ * The snippets are organised within their own directory, *Snippets*, with the name indicating the `[Cage-ID]_[Segment-ID]_[Snippet-ID]`
     * The CageID: An alphabetical assignment of Cage Identifiers (same as in the Thesis)
     * Segment ID: The original recordings were organised into 30 minute segments - this is the numeric segment identifier
     * Snippet ID: Numeric snippet identity within segment. This encodes the minute position of the start of the snippet and hence is in multiples of 2 (i.e. 0, 2, etc...)
