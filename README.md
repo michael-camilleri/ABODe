@@ -30,10 +30,10 @@ The video recordings are courtesy of the Mary Lyon Centre at MRC Harwell [3].
  * The data is provided for reproducibility purposes and also to allow further research on the data: for this reason, it is provided in its complete form and with minimal processing.
 
 ### 2.1 Storage Organisation
- * The dataset is stored partly within this repository (under `dataset`), with the snippets available through our [DataShare Project Page (Todo)](todo) as a zip-file: an empty directory is provided to indicate where it should exist relative to the root.
- * We provide two groundtruths:
-    * `Datasplits.df`: Assignment of snippets to datasplits (train/validation etc...)
-    * `Annotations.df`: Per-BTI annotations
+ * The dataset is stored partly within this repository (under `dataset`), with the snippets available through our [DataShare Project Page (Todo)](todo) as a zip-file: an empty *Snippets* directory is provided to indicate where it should exist relative to the root.
+ * We provide two global files:
+    * `Datasplits.df`: Pandas dataframe of assignment of snippets to datasplits (train/validation etc...)
+    * `Annotations.df`: Per-BTI annotations (pandas dataframe)
  * The snippets are organised within their own directory, with the name indicating the `[Cage-ID]_[Segment-ID]_[Snippet-ID]`
     * The CageID: An alphabetical assignment of Cage Identifiers (same as in the Thesis)
     * Segment ID: The original recordings were organised into 30 minute segments - this is the numeric segment identifier
@@ -44,7 +44,7 @@ The video recordings are courtesy of the Mary Lyon Centre at MRC Harwell [3].
     * `Positions.df`: Per-frame per-mouse antenna baseplate pickup (1 of 18 antennas)
 
 ### 2.2 Format of individual Dataframes
- * The data is stored as pandas dataframes in pickle format with `bz2` compression. They can be read into python using `pd.read_pickle('...', compression='bz2')`.
+ * The tabular data is stored as pandas dataframes in pickle format with `bz2` compression. They can be read into python using `pd.read_pickle('...', compression='bz2')`.
 
 #### `Datasplits.df`
  * Indexed by *Cage-ID*, *Segment-ID* and *Snippet ID* (same as snippet directory naming)
@@ -75,10 +75,10 @@ The video recordings are courtesy of the Mary Lyon Centre at MRC Harwell [3].
 -------------
 
 ## References
- If you find this data useful, please consider citing our work.
+ If you make use of this data, please cite our work, as below:
 
  For the general dataset:
- > [1] M. P. J. Camilleri, “Automated Identification and Behaviour Classification for Modelling Social Dynamics in Group-Housed Mice,” University of Edinburgh, 2023.
+ > [1] M. P. J. Camilleri, “Automated Identification and Behaviour Classification for Modelling Social Dynamics in Group-Housed Mice,” PhD Thesis, University of Edinburgh, 2023.
 
  For the Tracking and Identification Module:
  > [2] M. P. J. Camilleri, L. Zhang, R. S. Bains, A. Zisserman, and C. K. I. Williams, “Persistent Object Identification Leveraging Non-Visual Markers,” CoRR (arXiv), cs.CV (2112.06809), Dec. 2021. [Available on arXiv](https://arxiv.org/pdf/2112.06809.pdf)
