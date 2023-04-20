@@ -1,6 +1,7 @@
 # Annotated Behaviour and Observability Dataset (ABODe)
 This repository contains the Annotated Behaviour and Observability Dataset for group-housed mice used to train and evaluate the Activity Labelling Module in Chapter 5 of my PhD Thesis “Automated Identification and Behaviour Classification for Modelling Social Dynamics in Group-Housed Mice” [1].
 The video recordings are courtesy of the Mary Lyon Centre at MRC Harwell [3].
+The data is released under the CC-BY 4.0 License (a copy appears as part of the repository as DATA.LICENSE)
 
 ## 1. Repository Structure
 
