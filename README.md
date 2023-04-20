@@ -24,13 +24,13 @@ The video recordings are courtesy of the Mary Lyon Centre at MRC Harwell [3].
 -------------
 
 ## 2. Dataset
- * This dataset contains behaviour labels and associated features for groups of three mice in the homecage: please refer to [1, §3.5] for details of the data collection process.
+ * This dataset contains behaviour labels and associated features for groups of three mice in the homecage. The behaviour labels were provided by an animal care technician from the Mary Lyon Centre at MRC Harwell. Please refer to [1, §3.5] for details of the data collection process.
  * Recording periods, which we refer to as **Snippets** are two-minutes in length.
  * The basic unit of processing is the **Behavioural Time Interval (BTI)** (1 second duration), but within this, we are interested in the behaviour of each mouse separately (and hence, a single sample is a mouse-BTI combination).
  * The data is provided for reproducibility purposes and also to allow further research on the data: for this reason, it is provided in its complete form and with minimal processing.
 
 ### 2.1 Storage Organisation
- * The dataset is stored partly within this repository (under `dataset`), with the snippets available through our [DataShare Project Page](https://datashare.ed.ac.uk/handle/10283/4837) as a zip-file: an empty *Snippets* directory is provided to indicate where it should exist relative to the root.
+ * The dataset is stored partly within this repository (under `dataset`), with the snippets available through our [DataShare Project Page](https://datashare.ed.ac.uk/handle/10283/4837) as a zip-file (look for the `Zipped Directory of per-Snippet Data`): an empty *Snippets* directory is provided to indicate where it should exist (after unzipping) relative to the root.
  * We provide two global files:
     * `Datasplits.df`: Pandas dataframe of assignment of snippets to datasplits (train/validation etc...)
     * `Annotations.df`: Per-BTI annotations (pandas dataframe)
